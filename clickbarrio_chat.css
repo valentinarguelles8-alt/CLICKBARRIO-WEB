@@ -1,0 +1,26 @@
+/* ClickBarrio: widget de asistencia FAQ sin conexión a servicios externos */
+.cb-chat-launcher{position:fixed!important;right:22px;bottom:22px;z-index:99998!important;border:0;border-radius:60px;background:#214b3b;color:white;font:750 14px/1.2 "Segoe UI",Arial,sans-serif;box-shadow:0 12px 40px #193c2b55;padding:16px 23px;cursor:pointer;transition:transform .18s,box-shadow .18s}
+.cb-chat-launcher:hover{transform:translateY(-2px);box-shadow:0 14px 45px #193c2b77}.cb-chat-launcher:focus-visible,.cb-chat-container button:focus-visible,.cb-chat-container input:focus-visible{outline:3px solid #e5b86a;outline-offset:2px}
+.cb-chat-container{display:none;position:fixed;bottom:88px;right:22px;z-index:99997;width:min(420px,calc(100vw - 24px));font-family:"Segoe UI",Arial,sans-serif;color:#1b3027;font-size:14px;line-height:1.45}
+.cb-chat-container.cb-open{display:block}.cb-chat-panel{display:flex;flex-direction:column;background:#fff;box-shadow:0 15px 60px #101c183d;border:1px solid #dae2da;border-radius:18px;overflow:hidden;height:min(610px,calc(100dvh - 118px))}
+.cb-chat-head{display:flex;gap:12px;align-items:center;background:#214b3b;padding:18px 16px;color:#fff;min-height:76px}
+.cb-chat-logo{width:40px;height:40px;background:#dfeeaf;color:#214b3b;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:25px;font-weight:900}
+.cb-chat-title{flex:1;display:flex;flex-direction:column;gap:3px}.cb-chat-title strong{font-size:15px;color:#fff}.cb-chat-title small{font-size:11px;color:#d9e6dc}
+.cb-chat-close{border:0;background:transparent;color:#fff;font-size:27px;cursor:pointer;line-height:1;padding:6px 9px}
+.cb-chat-body{flex:1;overflow-y:auto;padding:18px 15px 14px;background:#f7faf5;display:flex;flex-direction:column;gap:13px;scroll-behavior:smooth}
+.cb-line{display:flex;flex-direction:column;max-width:94%;gap:8px}.cb-visitor{align-self:flex-end;align-items:flex-end}.cb-bot{align-self:flex-start}
+.cb-bubble{white-space:pre-wrap;overflow-wrap:anywhere;border-radius:14px 14px 14px 4px;background:#fff;border:1px solid #e6ece3;padding:12px 13px;box-shadow:0 2px 6px #132e1c08;color:#254031;font-size:13px;line-height:1.55}
+.cb-visitor .cb-bubble{background:#214b3b;border-color:#214b3b;color:#fff;border-radius:14px 14px 4px 14px}
+.cb-chat-links{display:flex;flex-direction:column;gap:7px}.cb-chat-link{display:inline-flex;max-width:100%;background:#edf5d9;border:1px solid #d9e9c4;padding:9px 12px;border-radius:10px;color:#1f513c;font-weight:750;text-decoration:none!important;font-size:12px}
+.cb-chat-suggestions{padding:9px 12px;background:#fff;display:flex;gap:7px;overflow-x:auto;flex-shrink:0;min-height:55px;align-items:center;border-top:1px solid #e6ebe5;scrollbar-width:thin}
+.cb-chat-chip{white-space:nowrap;border:1px solid #d5dfd4;border-radius:50px;padding:8px 10px;color:#2e5040;background:#f8fbf6;font:650 12px "Segoe UI",Arial,sans-serif;cursor:pointer;flex:none}
+.cb-chat-chip:hover{background:#eaf1dc}.cb-chat-escalate{background:#fcf5e9;border-color:#e8d9bd}
+.cb-chat-form{padding:11px 12px;display:flex;gap:7px;border-top:1px solid #edf0ec;background:#fff}
+.cb-chat-form input{border:1px solid #ced9ce;border-radius:10px;font:13px "Segoe UI",Arial,sans-serif;padding:12px;flex:1;min-width:0;color:#1b3027;background:#fff}
+.cb-chat-form button{border:0;border-radius:10px;width:44px;flex:none;background:#214b3b;color:#fff;font-size:20px;cursor:pointer}
+.cb-chat-disclaimer{font:11px/1.4 "Segoe UI",Arial,sans-serif;color:#6b7c70;margin:0;padding:0 13px 12px;background:#fff}
+.cb-chat-sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media (max-width:550px){.cb-chat-launcher{right:12px;bottom:12px;padding:13px 17px}.cb-chat-container{right:12px;bottom:70px;width:calc(100vw - 24px)}.cb-chat-panel{height:min(630px,calc(100dvh - 90px));border-radius:16px}}
+@media (prefers-reduced-motion:reduce){.cb-chat-launcher,.cb-chat-body{scroll-behavior:auto;transition:none}}
+
+.cb-chat-panel{padding:0!important;min-height:0!important}
